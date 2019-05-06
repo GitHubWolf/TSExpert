@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{987B1D29-CCA4-41F1-8E64-60E56822C035}</ProjectGuid>
+    <RootNamespace>TSExpert</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;Core;UIPackage;Common;D:\SourceCode\VLD-10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\SourceCode\VLD-10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;Core;UIPackage;Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CntrItem.cpp" />
+    <ClCompile Include="Core\CRC32.cpp" />
+    <ClCompile Include="CrcCalculationDialog.cpp" />
+    <ClCompile Include="Common\CRCGenerator.cpp" />
+    <ClCompile Include="Common\CSACipher.cpp" />
+    <ClCompile Include="CSACipherDialog.cpp" />
+    <ClCompile Include="Core\Descriptor.cpp" />
+    <ClCompile Include="FieldView.cpp" />
+    <ClCompile Include="UIPackage\HexEdit.cpp" />
+    <ClCompile Include="HexView.cpp" />
+    <ClCompile Include="Ip2FileDialog.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Common\MicrosecondTimer.cpp" />
+    <ClCompile Include="Core\PESPacketAssembler.cpp" />
+    <ClCompile Include="Core\PESPacketHeaderReader.cpp" />
+    <ClCompile Include="Core\PESPacketObserver.cpp" />
+    <ClCompile Include="Core\PESPacketParser.cpp" />
+    <ClCompile Include="Core\PESPacketSearcher.cpp" />
+    <ClCompile Include="RegistrationDialog.cpp" />
+    <ClCompile Include="SearchSetupDialog.cpp" />
+    <ClCompile Include="Core\SectionAssembler.cpp" />
+    <ClCompile Include="Core\SectionHeaderReader.cpp" />
+    <ClCompile Include="Core\SectionObserver.cpp" />
+    <ClCompile Include="Core\SectionStoreBAT.cpp" />
+    <ClCompile Include="Core\SectionStoreCAT.cpp" />
+    <ClCompile Include="Core\SectionStoreDIT.cpp" />
+    <ClCompile Include="Core\SectionStoreEIT.cpp" />
+    <ClCompile Include="Core\SectionStoreNIT.cpp" />
+    <ClCompile Include="Core\SectionStorePAT.cpp" />
+    <ClCompile Include="Core\SectionStorePMT.cpp" />
+    <ClCompile Include="Core\SectionStorePrivate.cpp" />
+    <ClCompile Include="Core\SectionStoreRST.cpp" />
+    <ClCompile Include="Core\SectionStoreSDT.cpp" />
+    <ClCompile Include="Core\SectionStoreSIT.cpp" />
+    <ClCompile Include="Core\SectionStoreSSU.cpp" />
+    <ClCompile Include="Core\SectionStoreTDT.cpp" />
+    <ClCompile Include="Core\SectionStoreTOT.cpp" />
+    <ClCompile Include="Core\SectionStoreTSDT.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TextView.cpp" />
+    <ClCompile Include="UIPackage\TreeList.cpp" />
+    <ClCompile Include="TSExpert.cpp" />
+    <ClCompile Include="TSExpertDoc.cpp" />
+    <ClCompile Include="TSExpertView.cpp" />
+    <ClCompile Include="Core\TSHeaderLocator.cpp" />
+    <ClCompile Include="Core\TSHeaderReader.cpp" />
+    <ClCompile Include="Core\TSPacketObserver.cpp" />
+    <ClCompile Include="Core\TSPacketProducer.cpp" />
+    <ClCompile Include="Core\TSPacketSearcher.cpp" />
+    <ClCompile Include="Core\TSPacketStore.cpp" />
+    <ClCompile Include="Core\TSParser.cpp" />
+    <ClCompile Include="Core\TSPidCounter.cpp" />
+    <ClCompile Include="Common\UdpSocketHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CntrItem.h" />
+    <ClInclude Include="Core\CRC32.h" />
+    <ClInclude Include="CrcCalculationDialog.h" />
+    <ClInclude Include="Common\CRCGenerator.h" />
+    <ClInclude Include="Common\CSACipher.h" />
+    <ClInclude Include="CSACipherDialog.h" />
+    <ClInclude Include="Core\Descriptor.h" />
+    <ClInclude Include="FieldView.h" />
+    <ClInclude Include="UIPackage\HexEdit.h" />
+    <ClInclude Include="HexView.h" />
+    <ClInclude Include="Ip2FileDialog.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Core\PESPacketAssembler.h" />
+    <ClInclude Include="Core\PESPacketHeaderReader.h" />
+    <ClInclude Include="Core\PESPacketObserver.h" />
+    <ClInclude Include="Core\PESPacketParser.h" />
+    <ClInclude Include="Core\PESPacketSearcher.h" />
+    <ClInclude Include="RegistrationDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SearchSetupDialog.h" />
+    <ClInclude Include="Core\SectionAssembler.h" />
+    <ClInclude Include="Core\SectionHeaderReader.h" />
+    <ClInclude Include="Core\SectionObserver.h" />
+    <ClInclude Include="Core\SectionStoreBAT.h" />
+    <ClInclude Include="Core\SectionStoreCAT.h" />
+    <ClInclude Include="Core\SectionStoreDIT.h" />
+    <ClInclude Include="Core\SectionStoreEIT.h" />
+    <ClInclude Include="Core\SectionStoreNIT.h" />
+    <ClInclude Include="Core\SectionStorePAT.h" />
+    <ClInclude Include="Core\SectionStorePMT.h" />
+    <ClInclude Include="Core\SectionStorePrivate.h" />
+    <ClInclude Include="Core\SectionStoreRST.h" />
+    <ClInclude Include="Core\SectionStoreSDT.h" />
+    <ClInclude Include="Core\SectionStoreSIT.h" />
+    <ClInclude Include="Core\SectionStoreSSU.h" />
+    <ClInclude Include="Core\SectionStoreTDT.h" />
+    <ClInclude Include="Core\SectionStoreTOT.h" />
+    <ClInclude Include="Core\SectionStoreTSDT.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TextView.h" />
+    <ClInclude Include="UIPackage\TreeList.h" />
+    <ClInclude Include="TSExpert.h" />
+    <ClInclude Include="TSExpertDoc.h" />
+    <ClInclude Include="TSExpertView.h" />
+    <ClInclude Include="Core\TSHeaderLocator.h" />
+    <ClInclude Include="Core\TSHeaderReader.h" />
+    <ClInclude Include="Core\TSPacketObserver.h" />
+    <ClInclude Include="Core\TSPacketProducer.h" />
+    <ClInclude Include="Core\TSPacketSearcher.h" />
+    <ClInclude Include="Core\TSPacketStore.h" />
+    <ClInclude Include="Core\TSParser.h" />
+    <ClInclude Include="Core\TSPid.h" />
+    <ClInclude Include="Core\TSPidCounter.h" />
+    <ClInclude Include="Core\TSPublic.h" />
+    <ClInclude Include="Core\TSTableId.h" />
+    <ClInclude Include="Common\UdpSocketHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\ToolBar32Plus32.bmp" />
+    <None Include="res\TreeIconList.BMP" />
+    <None Include="res\TSExpert.ico" />
+    <None Include="res\TSExpert.rc2" />
+    <None Include="res\TSExpertDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TSExpert.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TSExpert.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

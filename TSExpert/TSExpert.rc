@@ -1,0 +1,574 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TSExpert.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TSExpert.ico"
+IDR_TSExpertTYPE        ICON                    "res\\TSExpertDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_TREE_LIST    BITMAP                  "res\\TreeIconList.BMP"
+IDB_BITMAP_TOOL_BAR_32  BITMAP                  "res\\ToolBar32Plus32.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 32, 32
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_ADVANCED_SEARCH
+    SEPARATOR
+    BUTTON      ID_CACULATE_CRC
+    SEPARATOR
+    BUTTON      ID_CSA_DESCRAMBLER
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Tool"
+    BEGIN
+        MENUITEM "CRC caculation",              ID_CACULATE_CRC
+        MENUITEM "CSA descrambling",            ID_CSA_DESCRAMBLER
+        MENUITEM "Network dump",                ID_NETWORK_DUMP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TSExpert...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TSExpertTYPE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Tool"
+    BEGIN
+        MENUITEM "Search",                      ID_ADVANCED_SEARCH
+        MENUITEM "CRC caculation",              ID_CACULATE_CRC
+        MENUITEM "CSA descrambling",            ID_CSA_DESCRAMBLER
+        MENUITEM "Network dump",                ID_NETWORK_DUMP
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About TSExpert...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 326, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TSExpert"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    DEFPUSHBUTTON   "OK",IDOK,269,7,50,16,WS_GROUP
+    EDITTEXT        IDC_EDIT_INFO,7,39,312,179,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOG_SEARCH_SETUP DIALOGEX 0, 0, 361, 257
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Search"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Search Type:",IDC_STATIC,7,6,101,108
+    CONTROL         "TS Packet",IDC_RADIO_SEARCH_TYPE_TS_PACKET,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,26,69,10
+    CONTROL         "DVB Section",IDC_RADIO_SEARCH_TYPE_SECTION,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,17,49,69,10
+    CONTROL         "SSU Section",IDC_RADIO_SEARCH_TYPE_SSU_SECTION,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,17,72,69,10
+    CONTROL         "PES Packet",IDC_RADIO_SEARCH_TYPE_PES_PACKET,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,17,95,69,10
+    COMBOBOX        IDC_COMBO_COUNT,116,21,75,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SEARCH_ID,212,21,75,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_MASK,112,55,175,14,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MATCH,112,87,175,14,ES_UPPERCASE | ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Show All SSU Sections",IDC_CHECK_SHOW_ALL_SSU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,112,106,86,10
+    LISTBOX         IDC_LIST_PID,7,140,280,110,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Search",IDOK,297,20,50,14
+    PUSHBUTTON      "Close",IDCANCEL,297,44,50,14
+    LTEXT           "Count:",IDC_STATIC,115,6,61,14
+    LTEXT           "Mask : (For example: FF 00 00 FF)",IDC_STATIC,115,39,173,14
+    LTEXT           "Match: (For example: 00 00 00 AC)",IDC_STATIC,115,74,173,14
+    LTEXT           "PID:",IDC_STATIC,7,127,101,11
+    LTEXT           "Search ID:",IDC_STATIC,212,7,61,14
+END
+
+IDD_DIALOG_CRC_CALCULATION DIALOGEX 0, 0, 378, 237
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CRC Caculation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "CRC length:",IDC_STATIC,7,7,104,14
+    COMBOBOX        IDC_COMBO_CRC_BITS,7,24,104,19,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Polynomial(Hex):04C 11",IDC_STATIC,7,39,104,14
+    CONTROL         "",IDC_RICHEDIT_POLYNOMIA,"RichEdit20W",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,7,56,104,14
+    LTEXT           "Initial Value(Hex):FF FF",IDC_STATIC,7,73,104,14
+    CONTROL         "",IDC_RICHEDIT_INITVALUE,"RichEdit20W",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,7,90,104,14
+    CONTROL         "Reflect Input",IDC_CHECK_REFLECTINPUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,107,104,14
+    CONTROL         "Reflect Output",IDC_CHECK_REFLECTOUTPUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,124,104,14
+    LTEXT           "XOR Output(Hex):00 00",IDC_STATIC,7,141,104,14
+    CONTROL         "",IDC_RICHEDIT_XORVALUE,"RichEdit20W",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,7,158,104,14
+    LTEXT           "Result(Hex):",IDC_STATIC,7,175,104,14
+    CONTROL         "",IDC_RICHEDIT_CRCRESULT,"RichEdit20W",ES_AUTOHSCROLL | ES_READONLY | WS_BORDER,7,192,104,14
+    LTEXT           "Data to calculate CRC(Hex):",IDC_STATIC,124,7,176,13
+    CONTROL         "",IDC_HEX_RICHEDIT_DATA_BYTES,"RichEdit20W",ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,124,23,239,207
+    DEFPUSHBUTTON   "Calculate",IDOK,7,216,50,14
+    PUSHBUTTON      "Close",IDCANCEL,61,216,50,14
+END
+
+IDD_DIALOG_CSA_CIPHER DIALOGEX 0, 0, 390, 234
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CSA Encryption/Decryption"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RICHEDIT_INPUTDATA,"RichEdit20W",ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,19,178,128
+    CONTROL         "",IDC_RICHEDIT_OUTPUTDATA,"RichEdit20W",ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,205,20,178,127
+    CONTROL         "TS Packet",IDC_RADIO_DATA_TYPES_TS_PACKET,"Button",BS_AUTORADIOBUTTON | WS_GROUP,16,171,55,10
+    CONTROL         "Data bytes",IDC_RADIO_DATA_TYPES_DATA_BYTES,"Button",BS_AUTORADIOBUTTON,16,203,55,10
+    CONTROL         "Encrypt(Odd CW)",IDC_RADIO_OPERATION_TYPES_ENCRYPT_ODD,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,89,166,92,10
+    CONTROL         "Encrypt(Even CW)",IDC_RADIO_OPERATION_TYPES_ENCRYPT_EVEN,
+                    "Button",BS_AUTORADIOBUTTON,89,179,92,10
+    CONTROL         "Decrypt(Odd CW)",IDC_RADIO_OPERATION_TYPES_DECRYPT_ODD,
+                    "Button",BS_AUTORADIOBUTTON,89,192,92,10
+    CONTROL         "Decrypt(Even CW)",IDC_RADIO_OPERATION_TYPES_DECRYPT_EVEN,
+                    "Button",BS_AUTORADIOBUTTON,89,205,92,10
+    CONTROL         "",IDC_RICHEDIT_ODDCW,"RichEdit20W",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,208,170,110,16
+    CONTROL         "",IDC_RICHEDIT_EVENCW,"RichEdit20W",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,208,206,110,14
+    DEFPUSHBUTTON   "Caculate",IDOK,333,193,50,14
+    PUSHBUTTON      "Close",IDCANCEL,333,213,50,14
+    LTEXT           "Input data:",IDC_STATIC,7,7,91,11
+    LTEXT           "Output data:",IDC_STATIC,205,7,91,12
+    GROUPBOX        "Data type:",IDC_STATIC,7,154,65,73
+    LTEXT           "Odd CWs(8 Byte heximal):",IDC_STATIC,208,156,110,11
+    LTEXT           "Even CWs(8 Byte heximal):",IDC_STATIC,208,191,110,11
+    GROUPBOX        "Operation type:",IDC_STATIC,81,154,107,73
+    PUSHBUTTON      "<->",IDC_BUTTON_SWAP,186,77,17,15
+END
+
+IDD_DIALOG_REGISTRAION DIALOGEX 0, 0, 172, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RICHEDITRegistrationData,"RichEdit20W",ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,7,7,158,110
+    DEFPUSHBUTTON   "OK",IDOK,20,134,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,134,50,14
+END
+
+IDD_DIALOG_IP2FILE DIALOGEX 0, 0, 247, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dump IP Packets Into Local File"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_IPADDRESS_MULTICAST_ADDRESS,"SysIPAddress32",WS_TABSTOP,7,22,142,13
+    EDITTEXT        IDC_EDIT_PORT_NUMBER,168,22,40,15,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Start",IDC_BUTTON_START,141,156,38,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,202,156,38,14
+    EDITTEXT        IDC_EDIT_PACKET_PER_SECOND,7,92,62,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PACKET_COUNT,77,92,62,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DATA_SIZE,149,92,62,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BITRATE,7,125,62,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME_SKIPPED,79,125,62,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Multicast Address:",IDC_CHECK_MULTICAST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,95,10
+    LTEXT           "Port Number:",IDC_STATIC_PORT_NUMBER,168,7,58,11
+    LTEXT           "Save to:",IDC_STATIC,7,39,43,8
+    EDITTEXT        IDC_EDIT_OUTPUT_FILE_NAME,7,49,233,16,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Stastics",IDC_STATIC,7,71,233,74,BS_FLAT
+    LTEXT           "Packets:",IDC_STATIC,77,81,58,8
+    LTEXT           "Data size(byte):",IDC_STATIC,149,81,69,8
+    LTEXT           "Bit rate(bps):",IDC_STATIC,7,114,58,8
+    LTEXT           "Time skipped(second):",IDC_STATIC,79,114,84,8
+    LTEXT           "Packets/second:",IDC_STATIC,7,81,58,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,1,1,0
+ PRODUCTVERSION 4,1,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Neil Chen Ping Yuan"
+            VALUE "CompanyName", "GreatChinaWolf@126.com"
+            VALUE "FileDescription", "A transport stream file analyser."
+            VALUE "FileVersion", "4.1.1.0"
+            VALUE "InternalName", "TSExpert.exe"
+            VALUE "LegalCopyright", "<Neil Wolf Workroom>All rights reserved."
+            VALUE "OriginalFilename", "TSExpert.exe"
+            VALUE "ProductName", "TS Expert"
+            VALUE "ProductVersion", "4.1.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_SEARCH_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_CRC_CALCULATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 371
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_DIALOG_CSA_CIPHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 383
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_REGISTRAION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_IP2FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "TSExpert"
+    IDR_TSExpertTYPE        "\nTSExpert\nTSExpert\n\n\nTSExpert.Document\nTSExpert.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "TSExpert"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_MSG_TSEXPERT_CORE    "Message from TS expert core."
+    ID_ADVANCED_SEARCH      "Search packets or sections.\nSearch"
+    ID_CACULATE_CRC         "Caculate CRC value.\nCRC caculation"
+END
+
+STRINGTABLE
+BEGIN
+    ID_CSA_DESCRAMBLER      "Descramble data with control words.\nCSA descrambling"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TSExpert.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
